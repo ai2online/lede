@@ -110,7 +110,7 @@ jobs:
            cat >> .config <<EOF
            CONFIG_TARGET_bcm53xx=y
            CONFIG_TARGET_bcm53xx_DEVICE_phicomm-k3=y
-          # CONFIG_TARGET_BOARD="bcm53xx"
+           CONFIG_TARGET_BOARD="bcm53xx"
            EOF
 
           # 固件压缩:
@@ -125,7 +125,7 @@ jobs:
 
           # IPv6支持:
            cat >> .config <<EOF
-           CONFIG_PACKAGE_dnsmasq_full_dhcpv6=y
+           #CONFIG_PACKAGE_dnsmasq_full_dhcpv6=y
            CONFIG_PACKAGE_ipv6helper=y
            EOF
 
